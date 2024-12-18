@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your software development company offering custom web and mobile solutions.">
-    <title>Your Company - Software Development</title>
+    <meta name="description" content="Your software development company specializing in custom solutions, mobile apps, and cloud services.">
+    <title>Your Company - Software Development Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navbar -->
+    <!-- Header -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Company</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Your Software Development Partner</h1>
-            <p>Building innovative solutions for the digital age.</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transforming Ideas into Digital Solutions</h1>
+            <p>We craft software that empowers businesses to thrive in a digital-first world.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </section>
 
@@ -34,25 +42,37 @@
     <section id="about" class="section">
         <div class="container">
             <h2>About Us</h2>
-            <p>We are a team of passionate developers creating custom software solutions to help businesses thrive. With expertise in web, mobile, and cloud technologies, we deliver high-quality and scalable solutions tailored to your needs.</p>
+            <p>We are a passionate team of developers dedicated to creating high-quality custom software solutions. Whether it's a mobile app, web application, or cloud service, we bring your ideas to life with innovative technology and expert craftsmanship.</p>
+            <div class="about-cards">
+                <div class="card">
+                    <h3>Our Mission</h3>
+                    <p>Delivering reliable, scalable, and secure software solutions that accelerate business success.</p>
+                </div>
+                <div class="card">
+                    <h3>Our Vision</h3>
+                    <p>Empowering companies to grow with tailored software solutions that address their unique needs.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section">
+    <section id="services" class="section bg-light">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="service">
-                <h3>Custom Software Development</h3>
-                <p>We create tailor-made software solutions to meet the unique needs of your business.</p>
-            </div>
-            <div class="service">
-                <h3>Mobile App Development</h3>
-                <p>Designing and building mobile apps for iOS and Android that engage users and deliver value.</p>
-            </div>
-            <div class="service">
-                <h3>Cloud Solutions</h3>
-                <p>We offer scalable and secure cloud-based solutions for your growing business.</p>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Custom Software Development</h3>
+                    <p>From concept to deployment, we create tailored software solutions that meet your specific business needs.</p>
+                </div>
+                <div class="card">
+                    <h3>Mobile App Development</h3>
+                    <p>We build intuitive and scalable mobile apps for iOS and Android that offer seamless user experiences.</p>
+                </div>
+                <div class="card">
+                    <h3>Cloud Solutions</h3>
+                    <p>Our cloud solutions help businesses scale, reduce costs, and enhance collaboration through secure, flexible infrastructure.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -60,14 +80,38 @@
     <!-- Portfolio Section -->
     <section id="portfolio" class="section">
         <div class="container">
-            <h2>Our Work</h2>
-            <div class="portfolio-item">
-                <img src="project1.jpg" alt="Project 1">
-                <p>Project description and impact.</p>
+            <h2>Our Portfolio</h2>
+            <p>Explore some of our successful projects and see how we’ve helped our clients succeed with innovative solutions.</p>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <p>Project 1 - Web App Development</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <p>Project 2 - Mobile App for E-Commerce</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="project3.jpg" alt="Project 3">
+                    <p>Project 3 - Cloud Integration Solution</p>
+                </div>
             </div>
-            <div class="portfolio-item">
-                <img src="project2.jpg" alt="Project 2">
-                <p>Project description and impact.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-light">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The team at Your Company exceeded our expectations in every way. The custom software solution they delivered helped us streamline operations and boost efficiency!"</p>
+                    <h4>- Client Name, CEO of Company</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"We couldn't be more pleased with the mobile app Your Company developed for us. It's intuitive, fast, and exactly what we needed."</p>
+                    <h4>- Client Name, Founder of Startup</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -76,8 +120,8 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>If you have a project in mind or want to learn more about how we can help your business, get in touch with us!</p>
-            <form action="mailto:1108ad@gmail.com.com" method="post" enctype="text/plain">
+            <p>If you're ready to get started or have any questions, feel free to reach out to us. We look forward to hearing from you!</p>
+            <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
@@ -89,8 +133,14 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 SSDsukriti. All Rights Reserved.</p>
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
